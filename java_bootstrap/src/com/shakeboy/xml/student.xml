@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<!DOCTYPE students SYSTEM "student.dtd">-->
+<!DOCTYPE students[
+        <!ELEMENT students (student*)>
+        <!ELEMENT student (name,age,sex)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT sex (#PCDATA)>
+        <!ATTLIST student number ID #REQUIRED>
+        ]>
+<!--引入dtd文档
+    1.内部：定义在xml文件里面
+    2.外部：文件
+        本地：<!DOCTYPE 根标签名 SYSTEM "dtd位置">
+        网络：<!DOCTYPE 根标签名 PUBLIC "dtd文件名字" "dtd文件的url">
+-->
+<students>
+    <student number="s1">
+        <name>shakboy</name>
+        <age>45</age>
+        <sex>5</sex>
+    </student>
+    <student number="s2">
+        <name>shakboy</name>
+        <age>45</age>
+        <sex>5</sex>
+    </student>
+</students>

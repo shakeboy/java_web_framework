@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!--<?xml-stylesheet type="text/css" href="users.css"?>-->
+<!--1.文档声明,必须在第一行，不然会报错-->
+<!--2.后缀.xml-->
+<!--3.有且只有一个根标签,属性必须用引号（单双均可）引起来，必须有结束标签-->
+<!--4.xml区分大小写-->
+<!--5.组成部分
+        a.文档声明
+            1.格式：<?xml version='1.0' ?>
+            2.属性列表：
+                version：版本号 1.0（必写）
+                encoding：编码方式
+                standalone：是否独立
+        b.指令
+            <?xml-stylesheet type="text/css" href="users.css"?>
+        c.标签
+            名称自定义：不能数字开头
+        d.属性
+            id属性值唯一
+        e.文本
+            CDATA区：在该区域会被原样展示
+-->
+<!--6.约束
+    软件提供说明文档
+    规定了xml文档的书写者
+    1.引入约束文档
+    2.读懂约束文档
+    分类：
+    1.DTD：简单的约束技术
+    2.Schema：一种复杂的约束技术
+-->
+<users>
+    <user id="1">
+        <name>shakeboy</name>
+        <age>23</age>
+        <gender>男</gender>
+        <br name="hello" value="123"/>
+    </user>
+    <user id="2">
+        <name>shakeboy</name>
+        <age>23</age>
+        <gender>男</gender>
+    </user>
+    <code>
+        if(a&lt;b &amp;&amp;a&gt;c){
+
+        }
+        <![CDATA[if(a>c&&a<b){}]]>
+    </code>
+</users>
